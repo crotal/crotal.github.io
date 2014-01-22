@@ -1,0 +1,375 @@
+    /*Load Foundation Icons*/
+@font-face {
+		font-family: '[set]Foundicons';
+		src: url('http://designedbyben.com/appster/css/fonts/%5Bset%5D_foundicons.eot');
+		src: url('http://designedbyben.com/appster/css/fonts/%5Bset%5D_foundicons.eot?#iefix') format('embedded-opentype'), url('http://designedbyben.com/appster/css/fonts/%5Bset%5D_foundicons.woff') format('woff'), url('http://designedbyben.com/appster/css/fonts/%5Bset%5D_foundicons.ttf') format('truetype'), url('http://designedbyben.com/appster/css/fonts/%5Bset%5D_foundicons.svg#%5Bset%5DFoundicons') format('svg');
+		font-weight: normal;
+		font-style: normal;
+}
+
+[class*="foundicon-"] {
+		display: inline;
+		width: auto;
+		height: auto;
+		line-height: inherit;
+		vertical-align: baseline;
+		background-image: none;
+		background-position: 0 0;
+		background-repeat: repeat;
+}
+
+[class*="foundicon-"]:before {
+		font-family: "[set]Foundicons";
+		font-weight: normal;
+		font-style: normal;
+		text-decoration: inherit;
+}
+
+/*Begin General Styles*/
+
+
+.top-bar {
+		margin-bottom: 0;
+}
+
+.top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"] {
+		border-bottom: none;
+		border-top: none;
+		border-right: solid 1px #006699;
+		border-left: solid 1px  #006699;
+		clear: none;
+		height: 45px;
+		width: 0px;
+}
+
+.top-bar, .top-bar-section li a:not(.button),
+.top-bar-section ul li.active > a, .top-bar-section ul li > a,
+.top-bar-section .has-form{
+		background-color:#006699;
+}
+
+.top-bar-section li a:not(.button):hover {
+        background: #336699; }
+
+body {
+		color: #222;
+		font-family: "Raleway", Arial, Helvetica, Sans-serif;
+}
+
+.full-row {
+		width: 100%;
+}
+
+.full-row.grey {
+		background: #EFEFEF;
+}
+
+.features {
+		text-align: center;
+}
+
+.description {
+		float: left;
+		text-align: left;
+}
+
+.header img {
+		margin-top: 40px;
+}
+
+.features-intro {
+		margin-top: 70px;
+}
+.features-intro .button{
+		margin-right: 20px;
+}
+.top-email {
+		margin-bottom: 5px;
+}
+
+h1 {
+		color: #312A2A;
+		font-family: "Raleway", Arial, Helvetica, Sans-serif;
+		font-weight: 400;
+		margin-bottom: 10px;
+		margin-top: 10px;
+}
+
+h1, h2, h3, h4, h5, h6{
+		color: #312A2A;
+		font-family: "Raleway", Arial, Helvetica, Sans-serif;
+		font-weight: 400;
+}
+
+.header h1 {
+		font-size: 32px;
+}
+
+.features h1 {
+		margin-top: 60px;
+}
+
+.tour h1 {
+		text-align: center;
+		margin-top: 60px;
+}
+
+h2 {
+		font-size: 25px;
+		color: #222;
+		font-family: "Raleway", Arial, Helvetica, Sans-serif;
+		font-weight: 500;
+}
+
+.features h2 {
+		margin-top: 60px;
+}
+
+p.main {
+		font-size: 20px;
+		color: #312A2A;
+}
+
+p {
+		font-size: 16px;
+		color: #222;
+		letter-spacing: 0px;
+}
+
+p.description {
+		text-align: left;
+}
+
+p.header {
+		text-align: center;
+		font-size: 20px;
+}
+
+.full-row.darkgrey {
+		background-color:#073642;
+		color: #efefef;
+		text-align: center;
+		padding-bottom: 50px;
+		position: relative;
+		z-index: 10;
+}
+
+.full-row.darkgrey a{
+		font-family: Raleway, Arial, Helvetica, sans-serif;
+		font-size: 20px;
+font-style: normal;}
+
+.video h1 {
+		color: #efefef;
+}
+
+.full-row.darkgrey p {
+		color: #efefef;
+		font-size: 20px;
+}
+
+.video>h1 {
+		margin-top: 60px;
+}
+
+img {
+		margin-bottom: 40px;
+}
+
+hr {
+		border-bottom: solid white 1px;
+}
+
+.darkgrey h2 {
+		color: #efefef;
+		margin-top: 0px;
+		margin-bottom: 10px;
+}
+
+.darkgrey img {
+		margin-bottom: 0px;
+}
+
+.full-row.darkgrey p.description {
+		font-size: 15px;
+		text-align: center;
+		margin-bottom: 50px;
+}
+
+.dark-hr {
+		border-top: 1px solid rgb(58, 58, 58);
+		border-bottom: 1px solid rgb(82, 82, 82);
+		margin-bottom: 60px;
+}
+
+.icons {
+		list-style: none;
+		font-size: 16px;
+		text-align: left;
+}
+
+ul.title-area{
+}
+
+.top-bar.expanded .title-area{
+    background-color: #006699;
+}
+
+ul li{
+		font-size: 16px;
+		letter-spacing: 1px;
+}
+
+[class*="foundicon-"] {
+		display: inline;
+		width: auto;
+		height: auto;
+		line-height: inherit;
+		vertical-align: baseline;
+		background-image: none;
+		background-position: 0 0;
+		background-repeat: repeat;
+		font-size: 28px;
+		top: 6px;
+		position: relative;
+		margin-right: 10px;
+		text-shadow: 0px 0px 1px rgba(253, 253, 253, 1);
+}
+
+.button {
+		font-family: "Raleway", Arial, Helvetica, Sans-serif;
+		font-weight: 400;
+		border-radius: 3px;
+
+		-webkit-box-shadow: none;
+		box-shadow: none;
+}
+
+.iphone {
+		width: 350px;
+		height: auto;
+		float: right;
+		z-index: 5;
+		position: relative;
+		top: 40px;
+		margin-bottom: -50px;
+}
+
+h5 {
+		color: #EFEFEF;
+		padding-top: 50px;
+}
+
+.email {
+		margin-left: -15px !important;
+}
+
+.demo-video {
+		position: absolute;
+		top: 74px;
+		left: 50%;
+		margin-left: -197px;
+		width: 397px;
+		height: 249px;
+		background-color:#ffffff;
+		line-height: 35px;
+		padding: 20px 0 0 15px;
+}
+
+.demo-video .highlight pre{
+		font-family: Menlo, Consolas, "Courier New", Courier, "Liberation Mono", monospace;
+}
+
+@media screen and (max-width: 950px) {
+		.laptop {
+				display: none;
+		}
+		.demo-video {
+		}
+
+}
+@media screen and (max-width: 780px) {
+		.laptop {
+				display: none;
+		}
+		.demo-video {
+				margin-bottom: 40px;
+				position: relative;
+				top: 0;
+		}
+}
+
+@media screen and (max-width: 480px) {
+		.laptop {
+				display: none;
+		}
+		.demo-video {
+				/*display: none;*/
+				//width:300px;
+				//text-align: center;
+				position: relative;
+				padding-bottom: 100px;
+		}
+
+		h2 {
+				margin-top: 20px;
+		}
+
+		.cta {
+				margin-top: 120px;
+		}
+
+}
+
+.sidebar .active p{
+		margin: 0;
+		font-size: 14px;
+}
+
+.sidebar li{
+		border-left: solid 3px #0099CC;
+		padding-left: 10px;
+}
+
+.sidebar .active{
+		border-left: solid 3px #111111;
+}
+
+blockquote{
+		border-left: 5px solid ;
+}
+
+blockquote.warn{
+		border-color: #FF0033;
+}
+
+blockquote.note{
+		border-color: #FFCC33;
+}
+
+blockquote.tip{
+		border-color: #0099FF;
+}
+
+footer .footer{
+		margin-top: 30px;
+}
+
+code{
+    color: #0066CC;
+}
+
+.codehilite{
+		margin-bottom: 20px;
+}
+
+.content .codehilite pre{
+		line-height: 20px;
+		padding: 20px;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 5px 30px rgba(0,0,0,.3);
+}
+
+a.github img{
+		margin-bottom: 13px;
+}
