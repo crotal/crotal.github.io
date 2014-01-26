@@ -1,16 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-            <url><loc>http://crotal.org/docs
-    </loc>
-    <lastmod>2013-04-20</lastmod>
-    <priority>1.0</priority>
-    </url>
-        <url><loc>http://crotal.org/installation
-    </loc>
-    <lastmod>2013-04-20</lastmod>
-    <priority>1.0</priority>
-    </url>
-        <url><loc>http://crotal.org/docs/installation
+            <url><loc>http://crotal.org/docs/installation
     </loc>
     <lastmod>2013-04-20</lastmod>
     <priority>1.0</priority>
@@ -66,6 +56,16 @@
     <priority>1.0</priority>
     </url>
         <url><loc>http://crotal.org/docs/templates/
+    </loc>
+    <lastmod>2013-04-20</lastmod>
+    <priority>1.0</priority>
+    </url>
+        <url><loc>http://crotal.org/docs
+    </loc>
+    <lastmod>2013-04-20</lastmod>
+    <priority>1.0</priority>
+    </url>
+        <url><loc>http://crotal.org/installation
     </loc>
     <lastmod>2013-04-20</lastmod>
     <priority>1.0</priority>

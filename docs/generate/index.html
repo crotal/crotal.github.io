@@ -17,7 +17,7 @@
     <meta name="viewport" content="width=device-width" />
     <title>Generate the Site
  | Crotal</title>
-    <meta name="description" content="To generate the site, simply use this command: $ crotal generate After generating, the site will be available at _sites, do what you want to do with content in folder _sites. Since everytime the site generated, folder _sites will be overwritten.">
+    <meta name="description" content="To generate the site, simply use this command: $ crotal generate After generating, the site will be available at _sites, do what you want to do with content in folder _sites. Since everytime the site generated, folder _sites will be overwritten. ...">
 
     <link rel="stylesheet" href="/css/normalize.css" />
 
@@ -87,26 +87,51 @@
 
 
 <p>After generating, the site will be available at <code>_sites</code>, do what you want to do with content in folder <code>_sites</code>. Since everytime the site generated, folder <code>_sites</code> will be overwritten.</p>
+<h2>Incremental Generation</h2>
+<p>Crotal generates the site so fast because it uses incremental geneartion, when generating the site, only the new posts &amp; pages created or the old posts &amp; pages modified will be read from markdown files, other posts &amp; pages will be read directly from the file <code>db.json</code>.</p>
+<p>To generate the full site (turn off the incremental generation), simply add an argument <code>-f</code> or <code>--full</code> when generationg the site, like this:</p>
+<div class="codehilite"><pre><span class="nv">$ </span>crotal generate -f
+</pre></div>
+
+
+<p>or</p>
+<div class="codehilite"><pre><span class="nv">$ </span>crotal generate --full
+</pre></div>
     </div>
     <div class="large-3 medium-4 columns">
         <div class="hide-for-small">
     <div class="sidebar">
         <nav>
             <ul class="side-nav">
-                                                                                                                        <li><a href="/docs">Docs</a></li>
-                                                                                                                                                                                                                                                                                <li><a href="/docs/installation">Installation</a></li>
+                                                                                                                        <li class="slug"><p>Getting Started</p></li>
+                                                                                        <li><a href="/docs/installation">Installation</a></li>
+                            
                                                                                                                                                                                                 <li><a href="/docs/basic-usage/">Basic Usage</a></li>
+                            
                                                                                                                                                                                                 <li><a href="/docs/setup">Configuration</a></li>
+                            
                                                                                                                                                                                                 <li><a href="/docs/directory-structure/">Directory Structre</a></li>
-                                                                                                                                                                                                <li><a href="/docs/write-posts/">Write Posts</a></li>
+                            
+                                                                                                                                                                    <li class="slug"><p>Basic Usage</p></li>
+                                                                                        <li><a href="/docs/write-posts/">Write Posts</a></li>
+                            
                                                                                                                                                                                                 <li><a href="/docs/create-pages/">Create Pages</a></li>
+                            
                                                                                                                                                                                                 <li class="active"><p>Generate the Site</p></li>
+                            
                                                                                                                                                                                                 <li><a href="/docs/deployment/">Deploy the Site</a></li>
+                            
                                                                                                                                                                                                 <li><a href="/docs/server/">Run the Server</a></li>
-                                                                                                                                                                                                <li><a href="/docs/permalinks/">Permalinks</a></li>
+                            
+                                                                                                                                                                    <li class="slug"><p>Customization</p></li>
+                                                                                        <li><a href="/docs/permalinks/">Permalinks</a></li>
+                            
                                                                                                                                                                                                 <li><a href="/docs/themes/">Themes</a></li>
+                            
                                                                                                                                                                                                 <li><a href="/docs/templates/">Templates</a></li>
-                                                                                                    </ul>
+                            
+                                                                                                                                                                                                                            
+            </ul>
         </nav>
         <a href="http://crotal.org/crotal-0.3.3.tar.gz" class="download button expand">Download Crotal</a>
     </div>

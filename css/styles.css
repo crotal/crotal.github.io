@@ -337,6 +337,15 @@ h5 {
 		border-left: solid 3px #111111;
 }
 
+.sidebar .slug{
+    border: none;
+}
+
+.sidebar .slug p{
+    margin: 0;
+		font-size: 18px;
+}
+
 blockquote{
 		border-left: 5px solid ;
 }
