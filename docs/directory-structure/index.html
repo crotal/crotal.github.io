@@ -17,7 +17,7 @@
     <meta name="viewport" content="width=device-width" />
     <title>Directory Structre
  | Crotal</title>
-    <meta name="description" content="A basic Crotal site is like this: ▾ source/ ▾ pages/ docs.md installation.md ▾ _posts/ 2013-04-20-hello-world.markdown ▾ public/ ▾ _layout/ docs.html sidebar.html ▾ archive/ index.html ▾ category/ index.html index.html ▸ static/ ▾ themes/ ▸ default/ ...">
+    <meta name="description" content="A basic Crotal site is like this: ▾ source/ ▾ pages/ docs.md installation.md ▾ posts/ 2013-04-20-hello-world.markdown ▾ public/ ▾ _layout/ docs.html sidebar.html ▾ archive/ index.html ▾ category/ index.html index.html ▸ static/ ▾ themes/ ▸ default/ ...">
 
     <link rel="stylesheet" href="/css/normalize.css" />
 
@@ -86,7 +86,7 @@
     ▾ pages/
         docs.md
         installation.md
-    ▾ _posts/
+    ▾ posts/
         2013-04-20-hello-world.markdown
 ▾ public/
     ▾ _layout/
@@ -101,6 +101,7 @@
 ▾ themes/
     ▸ default/
   _config.yml
+  db.json
 </pre></div>
 
 
@@ -144,6 +145,10 @@
 <tr>
 <td>_config.yml</td>
 <td>The configuration file for the site.</td>
+</tr>
+<tr>
+<td>db.json</td>
+<td>The database for incremental generation, including the last modify time and content of the posts &amp; pages.</td>
 </tr>
 </tbody>
 </table>
