@@ -378,7 +378,7 @@ code{
 		line-height: 20px;
 		padding: 20px;
     border-radius: 5px 5px 5px 5px;
-    box-shadow: 0 5px 30px rgba(0,0,0,.3);
+    box-shadow: 0 0px 10px rgba(0,0,0,.3);
 }
 
 a.github img{
