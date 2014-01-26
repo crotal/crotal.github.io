@@ -66,6 +66,7 @@ body {
 
 .features {
 		text-align: center;
+    margin-bottom: 40px;
 }
 
 .description {
@@ -106,7 +107,6 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .features h1 {
-		margin-top: 60px;
 }
 
 .tour h1 {
