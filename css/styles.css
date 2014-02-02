@@ -366,6 +366,12 @@ footer .footer{
 		margin-top: 30px;
 }
 
+footer .signature{
+    font-family: "Stalemate", serif;
+    font-size: 28px;
+    color: #333;
+}
+
 code{
     color: #0066CC;
 }
