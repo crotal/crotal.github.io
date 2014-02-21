@@ -16,9 +16,9 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Deploy the Site
+    <title>Layout and Include
  | Crotal</title>
-    <meta name="description" content="Deploy Manually After generating, the site will be available at _sites, you can simply copy the contents to your server to deploy it, or you can deploy it by using Crotal's deploy command. Deploy by Crotal Before the deployment, make sure you have edit ...">
+    <meta name="description" content="">
 
     <link rel="stylesheet" href="/css/normalize.css" />
 
@@ -76,31 +76,13 @@
       <!-- End Top Navigation Bar -->
       <div class="row title">
     <div class="large-12 medium-8 columns">
-        <h1>Deploy the Site</h1>
+        <h1>Layout and Include</h1>
 </div>
 <hr/>
 </div>
 <div class="row content">
     <div class="large-9 medium-8 columns">
-        <h3>Deploy Manually</h3>
-<p>After generating, the site will be available at <code>_sites</code>, you can simply copy the contents to your server to deploy it, or you can deploy it by using Crotal's deploy command.</p>
-<h3>Deploy by Crotal</h3>
-<p>Before the deployment, make sure you have edit the <code>_config.yml</code> to set the <code>deploy_default</code> attribute to the deploy method you want.</p>
-<div class="codehilite"><pre><span class="c1"># Set this to rsync or git</span>
-<span class="l-Scalar-Plain">deploy_default</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">rsync</span>
-
-<span class="c1"># Rsync</span>
-<span class="l-Scalar-Plain">ip</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">root@8.8.8.8</span>
-<span class="l-Scalar-Plain">deploy_dir</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">/var/www/test</span>
-
-<span class="c1"># GitHub</span>
-<span class="l-Scalar-Plain">github_repo</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">https://github.com/dinever/dinever.github.io.git</span>
-</pre></div>
-
-
-<p>Since <code>_config.yml</code> is edited, simply use this command:</p>
-<div class="codehilite"><pre><span class="nv">$ </span>crotal deploy
-</pre></div>
+        
     </div>
     <div class="large-3 medium-4 columns">
         <div class="hide-for-small">
@@ -123,7 +105,7 @@
                             
                                                                                                                                                                                                 <li><a href="/docs/generate/">Generate the Site</a></li>
                             
-                                                                                                                                                                                                <li class="active"><p>Deploy the Site</p></li>
+                                                                                                                                                                                                <li><a href="/docs/deployment/">Deploy the Site</a></li>
                             
                                                                                                                                                                                                 <li><a href="/docs/server/">Run the Server</a></li>
                             
@@ -134,7 +116,7 @@
                             
                                                                                                                                                                                                 <li><a href="/docs/templates/">Templates</a></li>
                             
-                                                                                                                                                                                                <li><a href="/docs/layout-and-include/">Layout and Include</a></li>
+                                                                                                                                                                                                <li class="active"><p>Layout and Include</p></li>
                             
                                                                                                                                                                                                                                         </ul>
         </nav>

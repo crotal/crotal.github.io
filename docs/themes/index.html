@@ -18,7 +18,7 @@
     <meta name="viewport" content="width=device-width" />
     <title>Themes
  | Crotal</title>
-    <meta name="description" content="A Crotal theme directory is like this: ▾ appster/ ▾ public/ ▾ _asides/ about.html friends.html recent_comments.html recent_post.html social.html twitter.html weibo.html ▾ _comments/ disqus.html duoshuo.html ▾ _layout/ base.html get_more_posts.html ...">
+    <meta name="description" content="A Crotal theme directory is like this: ▾ default/ ▾ public/ ▾ _includes/ ▾ asides/ about.html friends.html recent_comments.html recent_post.html social.html weibo.html after_footer.html comments.html disqus.html duoshuo.html facebook_like.html ...">
 
     <link rel="stylesheet" href="/css/normalize.css" />
 
@@ -83,32 +83,43 @@
 <div class="row content">
     <div class="large-9 medium-8 columns">
         <p>A Crotal theme directory is like this:</p>
-<div class="codehilite"><pre>▾ appster/
-        ▾ public/
-                ▾ _asides/
-                        about.html
-                        friends.html
-                        recent_comments.html
-                        recent_post.html
-                        social.html
-                        twitter.html
-                        weibo.html
-                ▾ _comments/
-                        disqus.html
-                        duoshuo.html
-                ▾ _layout/
-                        base.html
-                        get_more_posts.html
-                        navbar.html
-                        page.html
-                        paginate.html
-                        post.html
-                        sidebar.html
-        ▾ static/
-                ▸ css/
-                ▸ fonts/
-                ▸ img/
-                ▸ js/
+<div class="codehilite"><pre>▾ default/
+    ▾ public/
+        ▾ _includes/
+            ▾ asides/
+                about.html
+                friends.html
+                recent_comments.html
+                recent_post.html
+                social.html
+                weibo.html
+            after_footer.html
+            comments.html
+            disqus.html
+            duoshuo.html
+            facebook_like.html
+            footer.html
+            google_analytics.html
+            google_plus_one.html
+            head.html
+            header.html
+            navbar.html
+            paginate.html
+            sidebar.html
+            twitter_sharing.html
+        ▾ _layout/
+            default.html
+            page.html
+            post.html
+        ▾ archive/
+            index.html
+        ▾ category/
+            index.html
+        index.html
+    ▾ static/
+        ▾ css/
+            pygments.css
+            style.css
 </pre></div>
 
 
@@ -130,12 +141,12 @@
 <td><code>static</code> folder contains the static files the theme needs, such as css, js, font, and images.</td>
 </tr>
 <tr>
-<td>_asides</td>
-<td>The sidebar html files the theme may need.</td>
+<td>_includes</td>
+<td>Some piece of html blocks that other template files may use by including them.</td>
 </tr>
 <tr>
-<td>_comments</td>
-<td>The comment system's embed code your can choose.</td>
+<td>_includes/asides</td>
+<td>The sidebar html files the theme may need.</td>
 </tr>
 <tr>
 <td>_layout</td>
@@ -176,6 +187,8 @@
                                                                                                                                                                                                 <li class="active"><p>Themes</p></li>
                             
                                                                                                                                                                                                 <li><a href="/docs/templates/">Templates</a></li>
+                            
+                                                                                                                                                                                                <li><a href="/docs/layout-and-include/">Layout and Include</a></li>
                             
                                                                                                                                                                                                                                         </ul>
         </nav>
