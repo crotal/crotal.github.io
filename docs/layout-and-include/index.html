@@ -18,7 +18,7 @@
     <meta name="viewport" content="width=device-width" />
     <title>Layout and Include
  | Crotal</title>
-    <meta name="description" content="">
+    <meta name="description" content="In order to make it easier to migrate themes from Octorpess, Crotal uses layout to implement the nest relations in templates. For example, if page.html is like this: --- layout: default --- foo: {{ foo }} bar: {{ bar }} Crotal will find the layout html ...">
 
     <link rel="stylesheet" href="/css/normalize.css" />
 
@@ -82,7 +82,59 @@
 </div>
 <div class="row content">
     <div class="large-9 medium-8 columns">
-        
+        <p>In order to make it easier to migrate themes from Octorpess, Crotal uses <code>layout</code> to implement the nest relations in templates.</p>
+<p>For example, if <code>page.html</code> is like this:</p>
+<div class="codehilite"><pre><span class="nn">---</span>
+<span class="l-Scalar-Plain">layout</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">default</span>
+<span class="nn">---</span>
+
+<span class="l-Scalar-Plain">foo</span><span class="p-Indicator">:</span> <span class="p-Indicator">{{</span> <span class="nv">foo</span> <span class="p-Indicator">}}</span>
+<span class="l-Scalar-Plain">bar</span><span class="p-Indicator">:</span> <span class="p-Indicator">{{</span> <span class="nv">bar</span> <span class="p-Indicator">}}</span>
+</pre></div>
+
+
+<p>Crotal will find the layout html file at <code>/&lt;your-theme-folder&gt;/public/_layout/default.html</code>, and if it's like this:</p>
+<div class="codehilite"><pre><span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+{{ content }}
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</pre></div>
+
+
+<p><code>{{ content }}</code> will be replaced by content in <code>page.html</code>, and then crotal will render the page like this:</p>
+<div class="codehilite"><pre><span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+
+foo: {{ foo }}
+bar: {{ bar }}
+
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</pre></div>
+
+
+<p>That's what <code>layout</code> actually does, in jinja2, the same funtion can be implemented by using <code>extends</code>:</p>
+<div class="codehilite"><pre><span class="p-Indicator">{</span><span class="err">%</span> <span class="nv">extends &quot;_layout/default.html&quot; %</span><span class="p-Indicator">}</span>
+<span class="p-Indicator">{</span><span class="err">%</span> <span class="nv">block content %</span><span class="p-Indicator">}</span>
+<span class="l-Scalar-Plain">foo</span><span class="p-Indicator">:</span> <span class="p-Indicator">{{</span> <span class="nv">foo</span> <span class="p-Indicator">}}</span>
+<span class="l-Scalar-Plain">bar</span><span class="p-Indicator">:</span> <span class="p-Indicator">{{</span> <span class="nv">bar</span> <span class="p-Indicator">}}</span>
+<span class="p-Indicator">{</span><span class="err">%</span> <span class="nv">end block%</span><span class="p-Indicator">}</span>
+</pre></div>
+
+
+<p>and</p>
+<div class="codehilite"><pre><span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+
+{% block content %}
+{% end block %}
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</pre></div>
     </div>
     <div class="large-3 medium-4 columns">
         <div class="hide-for-small">
