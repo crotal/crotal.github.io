@@ -1,91 +1,87 @@
-<link href="//fonts.googleapis.com/css?family=Stalemate:400" rel="stylesheet" type="text/css">
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html>
+<html lang="en">
 
-
-
-<!--[if lt IE 7]><html class="lt-ie9 lt-ie8 lt-ie7" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><![endif]-->
-<!--[if IE 7]><html class="lt-ie9 lt-ie8" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><![endif]-->
-<!--[if IE 8]><html class="lt-ie9" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><![endif]-->
-<!--[if gt IE 8]><!--><html xmlns="http://www.w3.org/1999/xhtml"><!--<![endif]-->
-
-
-<!--[if gt IE 8]>
-  <!-->
-<html class="no-js" lang="en" >
-<!--<![endif]-->
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width" />
-<title>Docs
- | Crotal</title>
-<meta name="description" content="Welcome Welcome to the Crotal's documentation, getting started with Crotal is easy. I will describe it in as much detail as possible. However, if you get stuck in any problem, please check this documentation first, if you still can't get the solution ...">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="">
 
-<link rel="stylesheet" href="/css/normalize.css" />
+  <title>Documentation - Crotal</title>
 
-<link rel="stylesheet" href="/css/foundation.css" />
-<link rel="stylesheet" href="/css/styles.css" />
-<link rel="stylesheet" href="/css/pygment_trac.css" />
-
-<link rel="stylesheet" href="/css/general_foundicons.css">
-<!--[if lt IE 9]>
-    <link rel="stylesheet" href="/css/ie8-grid-foundation-4.css">
-    <![endif]-->
-<!--[if lt IE 8]>
-    <link rel="stylesheet" href="/css/general_foundicons_ie7.css">
-    <![endif]-->
+  <link href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
+  <link href="/assets/css/toolkit-minimal.css" rel="stylesheet">
+  <link href="/assets/css/application-minimal.css" rel="stylesheet">
+  <link href="/assets/css/docs.css" rel="stylesheet">
 
 
-<link href="http://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet" type="text/css">
 
-<script src="js/vendor/custom.modernizr.js"></script>
+  <style>
+    /* note: this is a hack for ios iframe for bootstrap themes shopify page */
+    /* this chunk of css is not part of the toolkit :) */
+
+    body {
+      width: 1px;
+      min-width: 100%;
+      *width: 100%;
+    }
+  </style>
 
 </head>
+
+
 <body>
-<!-- Begin Menu Bar -->
-<nav class="row top-bar">
-        <ul class="title-area">
-          <!-- Title Area -->
-          <li class="name">
-            <h1>
-              <a href="/">Crotal</a>
-            </h1>
-          </li>
-          <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-          <li class="toggle-topbar menu-icon">
-            <a href="index.html#">
-              <span>Menu</span>
-            </a>
-          </li>
-        </ul>
+  <div class="stage-shelf hidden" id="sidebar">
+    <ul class="nav nav-bordered nav-stacked">
+      <li class="nav-header">Crotal</li>
+      <li>
+        <a href="/">Home</a>
+      </li>
+      <li class="nav-divider"></li>
+      <li class="nav-header">Docs</li>
+      <li><a href="/docs">Documentation</a></li>
+      <li><a href="/docs/tutorial">Tutorial</a></li>
+    </ul>
+  </div>
 
-        <section class="top-bar-section">
-          <!-- Left Nav Section -->
-          <ul class="left">
-            <li class="active">
-              <a href="/installation/">INSTALLATION</a>
-            </li>
-            <li>
-              <a href="/docs/">DOCS</a>
-            </li>
-          </ul>
 
-          <!-- Right Nav Section -->
+  <div class="stage" id="app-stage">
 
-        </section>
-      </nav>
-<!-- End Top Navigation Bar -->
-<div class="row title">
-    <div class="large-12 medium-8 columns">
-        <h1>Docs</h1>
-</div>
-<hr/>
-</div>
-<div class="row content">
-    <div class="large-9 medium-8 columns">
-        <h1>Welcome</h1>
-<p>Welcome to the Crotal's documentation, getting started with Crotal is easy. I will describe it in as much detail as possible. However, if you get stuck in any problem, please check this documentation first, if you still can't get the solution after checking this documentation, please <a href="https://github.com/dinever/crotal/issues">file an issue on GitHub</a>.</p>
+    <button class="btn btn-link stage-toggle" data-target="#app-stage" data-toggle="stage">
+      <span class="icon icon-menu stage-toggle-icon"></span> Menu
+    </button>
+
+
+    <div class="docs-header" id="content">
+      <div class="container">
+        <h1>Documentation</h1>
+      </div>
+    </div>
+    <div class="container docs-content">
+      <nav id="markdown-toc"></nav>
+
+      <h1>Welcome</h1>
+<p>Welcome to the documentation of Crotal, getting started with Crotal is easy. I will describe it in as much detail as possible. However, if you get stuck in any problem, please check this documentation first, if you still can't get the solution after checking this documentation, please <a href="https://github.com/dinever/crotal/issues">file an issue on GitHub</a>.</p>
 <h1>What is Crotal?</h1>
 <p>Crotal is a static site generator, it reads markdown files and output a full static site, Crotal is good at blog, magazine or publishing sites, static site is fast and safe, and you need not to do any kind of transformations in web hosting. If you are familiar with HTML, you can easily custom the default theme, if you are good at Python, you can check the source code and modify it.</p>
+<h1>Installation</h1>
+<p>Before the installation, let's make sure that you have these installed.</p>
+<ul>
+<li>Python 2</li>
+<li>Pip</li>
+</ul>
+<h2>Install Crotal via Pip</h2>
+<div class="codehilite"><pre><span class="nv">$ </span>pip install crotal
+</pre></div>
+
+
+<h2>Install Crotal via Pip</h2>
+<div class="codehilite"><pre><span class="nv">$ </span>pip install crotal
+</pre></div>
+
+
 <h1>Getting Started</h1>
 <p>Before we get started, I want you to make sure 3 kinds of tips as following:</p>
 <blockquote class="note">
@@ -102,102 +98,22 @@
     <strong>Tips</strong>
     <p>Tips make you more skilled with Crotal.</p>
 </blockquote>
+      <a class="docs-top" style="display: none" href="#">Back to top</a>
     </div>
-    <div class="large-3 medium-4 columns">
-        <div class="hide-for-small">
-    <div class="sidebar">
-        <nav>
-            <ul class="side-nav">
-                                                                                                                        <li class="slug"><p>Getting Started</p></li>
-                                                                                        <li><a href="/docs/installation">Installation</a></li>
-                            
-                                                                                                                                                                                                <li><a href="/docs/basic-usage/">Basic Usage</a></li>
-                            
-                                                                                                                                                                                                <li><a href="/docs/setup">Configuration</a></li>
-                            
-                                                                                                                                                                                                <li><a href="/docs/directory-structure/">Directory Structre</a></li>
-                            
-                                                                                                                                                                    <li class="slug"><p>Basic Usage</p></li>
-                                                                                        <li><a href="/docs/write-posts/">Write Posts</a></li>
-                            
-                                                                                                                                                                                                <li><a href="/docs/create-pages/">Create Pages</a></li>
-                            
-                                                                                                                                                                                                <li><a href="/docs/generate/">Generate the Site</a></li>
-                            
-                                                                                                                                                                                                <li><a href="/docs/deployment/">Deploy the Site</a></li>
-                            
-                                                                                                                                                                                                <li><a href="/docs/server/">Run the Server</a></li>
-                            
-                                                                                                                                                                    <li class="slug"><p>Customization</p></li>
-                                                                                        <li><a href="/docs/permalinks/">Permalinks</a></li>
-                            
-                                                                                                                                                                                                <li><a href="/docs/themes/">Themes</a></li>
-                            
-                                                                                                                                                                                                <li><a href="/docs/templates/">Templates</a></li>
-                            
-                                                                                                                                                                                                <li><a href="/docs/layout-and-include/">Layout and Include</a></li>
-                            
-                                                                                                                                                                                                                                        </ul>
-        </nav>
-        <a href="http://crotal.org/crotal-0.3.3.tar.gz" class="download button expand">Download Crotal</a>
+  </div>
+  <div class="block app-block-footer">
+    <div class="container">
+      <div class="row">
+        <div id="footer-copyright">© 2015 <a href="http://dinever.com/" target="_blank">Peixuan(Shawn) Ding</a>
+          <br>Documentation licensed under <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>.</div>
+      </div>
     </div>
-</div>    </div>
-</div><!-- Footer -->
-<footer>
-    <div class="row footer">
-        <div class="large-6 columns left">
-            <p>Copyright @ 2013 - Peixuan Ding</p>
-        </div>
-        <div class="large-6 columns text-right right">
-            <p>Hosted by<a href="http://github.com/" target="_blank" class="github"><img src="/images/github.png" ></img></a></p>
-        </div>
-    </div>
-</footer>
+  </div>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  <script src="/assets/js/jquery.min.js" type="text/javascript"></script>
+  <script src="/assets/js/toolkit.js" type="text/javascript"></script>
+  <script src="/assets/js/application.js" type="text/javascript"></script>
+  <script src="/assets/js/anchorific.js" type="text/javascript"></script>
+  </body>
 
-<!-- Ajax Form -->
-<script type="text/javascript">
-$(document).ready(function() {
-        // bind form using ajaxForm
-        $('#email-form').ajaxForm({
-resetForm: true,
-
-// target identifies the element(s) to update with the server response
-target: '#success-message',
-
-// success identifies the function to invoke when the server response
-// has been received; here we apply a fade-in effect to the new content
-success: function() {
-$('#success-message').fadeIn('slow');
-}
-});
-        });
-</script>
-<script type="text/javascript">
-
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-48757855-1']);
-_gaq.push(['_trackPageview']);
-
-(function() {
- var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
- ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
- var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
- })();
-
-</script>
-<script src="js/foundation.min.js"></script>
-
-<script src="http://designedbyben.com/appster/js/foundation/foundation.js"></script>
-
-<script src="js/foundation/foundation.dropdown.js"></script>
-
-<script src="js/foundation/foundation.topbar.js"></script>
-
-
-<script>$(document).foundation();</script>
-
-
-</body>
 </html>

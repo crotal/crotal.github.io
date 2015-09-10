@@ -1,18 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
-  <channel>
-    <atom:link rel="hub" href="http://pubsubhubbub.appspot.com" xmlns:atom="http://www.w3.org/2005/Atom"/>
-    <title></title>
-    <generator>Turtpress</generator>
-    <link></link>
-
-        <item>
-      <title>new_post</title>
-      <description>Hello World!!</description>
-      <link>/blog/2014/04/19/new_post</link>
-      <pubDate>2014-04-19 14:10:00 +0800</pubDate>
-      2012-11-20 13:55:00 +0100
-      <guid>/blog/2014/04/19/new_post</guid>
-    </item>
-      </channel>
-</rss>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>http://your-url-here.com/hello-world/</loc>
+        <lastmod>2012-01-01</lastmod>
+        <priority>1.0</priority>
+    </url>
+</urlset>

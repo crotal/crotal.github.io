@@ -1,236 +1,156 @@
-<link href="//fonts.googleapis.com/css?family=Stalemate:400" rel="stylesheet" type="text/css">
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A static site generator which is written in Python, easy to use, and free to all.Start a blog right now using Crotal!">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <title>Crotal - Python Blog & Static Site Framework</title>
+
+
+      <link href="https://fonts.googleapis.com/css?family=Lora:400,400italic|Work+Sans:300,400,500,600" rel="stylesheet" type="text/css">
+      <link href="assets/css/toolkit-startup.css" rel="stylesheet">
+      <link href="assets/css/application-startup.css" rel="stylesheet">
 
 
 
-<!--[if lt IE 7]><html class="lt-ie9 lt-ie8 lt-ie7" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><![endif]-->
-<!--[if IE 7]><html class="lt-ie9 lt-ie8" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><![endif]-->
-<!--[if IE 8]><html class="lt-ie9" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><![endif]-->
-<!--[if gt IE 8]><!--><html xmlns="http://www.w3.org/1999/xhtml"><!--<![endif]-->
+
+    <style>
+      /* note: this is a hack for ios iframe for bootstrap themes shopify page */
+      /* this chunk of css is not part of the toolkit :) */
+      /* …curses ios, etc… */
+      @media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+        body {
+          width: 1px;
+          min-width: 100%;
+          *width: 100%;
+        }
+        #stage {
+          height: 1px;
+          overflow: auto;
+          min-height: 100vh;
+          -webkit-overflow-scrolling: touch;
+        }
+      }
+    </style>
+  <style type="text/css"></style></head>
 
 
-<!--[if gt IE 8]>
-  <!-->
-<html class="no-js" lang="en" >
-<!--<![endif]-->
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width" />
-<title>Crotal - Python Blog & Static Site Framework
- | Crotal</title>
-<meta name="description" content="A static site generator which is written in Python, easy to use, and free to all.Start a blog right now using Crotal!">
-
-<link rel="stylesheet" href="/css/normalize.css" />
-
-<link rel="stylesheet" href="/css/foundation.css" />
-<link rel="stylesheet" href="/css/styles.css" />
-<link rel="stylesheet" href="/css/pygment_trac.css" />
-
-<link rel="stylesheet" href="/css/general_foundicons.css">
-<!--[if lt IE 9]>
-    <link rel="stylesheet" href="/css/ie8-grid-foundation-4.css">
-    <![endif]-->
-<!--[if lt IE 8]>
-    <link rel="stylesheet" href="/css/general_foundicons_ie7.css">
-    <![endif]-->
-
-
-<link href="http://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet" type="text/css">
-
-<script src="js/vendor/custom.modernizr.js"></script>
-
-</head>
 <body>
-<!-- Begin Menu Bar -->
-<nav class="row top-bar">
-        <ul class="title-area">
-          <!-- Title Area -->
-          <li class="name">
-            <h1>
-              <a href="/">Crotal</a>
-            </h1>
-          </li>
-          <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-          <li class="toggle-topbar menu-icon">
-            <a href="index.html#">
-              <span>Menu</span>
-            </a>
-          </li>
-        </ul>
 
-        <section class="top-bar-section">
-          <!-- Left Nav Section -->
-          <ul class="left">
-            <li class="active">
-              <a href="/installation/">INSTALLATION</a>
-            </li>
-            <li>
-              <a href="/docs/">DOCS</a>
-            </li>
-          </ul>
 
-          <!-- Right Nav Section -->
 
-        </section>
-      </nav>
-<!-- End Top Navigation Bar -->
 
-    <!-- Begin main Above the fold Header -->
-      <!-- "full-row" class allows background to stretch to 100% width -->
-      <div class="row header">
-        <div class="large-5 columns features-intro">
-          <!-- Main Heading -->
-          <h1>Crotal is a static site generator.</h1>
-          <p class="main">
-            <b>Simpe, Static, Fast</b>
-            <br/>
-            Easy to use, and free to all.
-          </p>
-          <!-- Email Subscribe Form -->
-          <div class="large-12 columns">
-            <div class="row collapse email">
-            <a style="float:left"href="http://github.com/dinever/crotal" class="small button">View on Github</a>
+<div class="stage-shelf stage-shelf-right hidden" id="sidebar">
+  <ul class="nav anr nav-stacked">
+    <li class="nav-header">Crotal</li>
+    <li class="active">
+      <a href="/">Home</a>
+    </li>
+    <li class="nav-divider"></li>
+    <li class="nav-header">Docs</li>
+      <li><a href="/docs">Documentation</a></li>
+      <li><a href="/docs/tutorial">Tutorial</a></li>
+  </ul>
+</div>
 
-						<iframe src="http://ghbtns.com/github-btn.html?user=dinever&repo=crotal&type=watch&count=true&size=large" height="30" width="170" frameborder="0" scrolling="0" style="width:170px; height: 30px; margin-bottom: 16.25px;" allowTransparency="true"></iframe>
+<div class="stage" id="stage">
 
-            <a style="float:left" href="http://crotal.org/crotal-0.3.3.tar.gz" class="small button success">Download Souce Code</a>
+<div class="block block-inverse block-fill-height aqx" style="background-image: linear-gradient(to bottom, #02B78D, #0760AD);">
 
-              <!-- End Email Row -->
+  <nav class="navbar navbar-transparent navbar-fixed-top navbar-padded app-navbar p-t-md">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed p-x-0" data-target="#stage" data-toggle="stage" data-distance="-250">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="">
+          <strong style="background: #fff; padding: 8px; border-radius: 4px; color: #05889F;font-size: 30px;">Cr</strong>
+      </a>
 
-            </div>
-          </div>
-
-        </div>
-
-        <div class="large-7 columns">
-          <!-- Begin HTML5 Video -->
-          <img src="img/laptop-blank.png" class="laptop">
-          <div class="demo-video" preload="" loop="" autoplay controls muted >
-<div class="codehilite"><pre><span class="o">$</span> sudo pip install <span class="no">crotal</span>
-<span class="o">$</span> <span class="no">crotal</span> init <span class="s1">my_site</span> <span class="o">&amp;&amp;</span> <span class="nb">cd </span><span class="s1">my_site</span>
-<span class="o">$</span> <span class="no">crotal</span> generate
-<span class="o">$</span> <span class="no">crotal</span> server
-<span class="c"># =&gt; Now the website is available</span>
-<span class="c"># =&gt; at http://localhost:8000</span>
-</pre></div>
-
-          </div>
-        </div>
-
-      <!-- End row -->
-      </div>
-      <!-- End "full-row" -->
-
-    <!-- Begin Features -->
-    <div class="row features">
-
-      <!-- Divided in to columns of 4 to create a layout of thirds -->
-      <div class="large-4 columns">
-        <!-- Feature name -->
-        <h2>Crotal is Simple</h2>
-        <!-- Feature Description -->
-        <p>
-        Crotal is written in Python, and can be easily installed with pip, all you need to concern is the content.
-        </p>
-        <!-- Corresponding Image -->
-        <!-- End Feature -->
-      </div>
-
-      <!-- Begin Feature 2 -->
-      <div class="large-4 columns">
-        <h2>Crotal is Static</h2>
-        <p>
-        Static site generated from markdown files. As is static, the site can be easily deployed on any server.
-        </p>
-      </div>
-
-      <!-- Begin Feature 3 -->
-      <div class="large-4 columns">
-        <h2>Crotal is Fast</h2>
-        <p>
-        Crotal uses incremental generation, old posts stored cached in the database, so the generation is super fast.
-        </p>
-      </div>
-
-      <!-- End Row -->
+      </a>
     </div>
+    <div class="navbar-collapse collapse text-uppercase">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="/docs">Docs</a>
+        </li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
 
-    <!-- Large Video Section -->
-    <div class="full-row darkgrey" style="z-index:1;">
+
+  <div class="block-xs-middle p-b-lg">
+    <div class="container">
       <div class="row">
-        <div class="large-12 columns video">
-          <h1>Ready to Start?</h1>
-
-          <!-- In Description use <b></b> tags for emphasis -->
-          <p>
-          Check the <a href="/docs/" target="_blank">Documents</a> to learn more.
-            </p>
-
-            </div>
-            <!-- End Row -->
+        <div class="col-lg-10 col-md-6">
+          <h1 class="block-title aqy">Crotal</h1>
+          <h1 class="block-title aqy">a static site framework</h1>
+          <p class="lead m-b-md text-muted">Fast, powerful, and easy as 1, 2, 3</p>
+        </div>
+          <div class="col-lg-6 col-md-6">
+            <pre class="command">$ pip install crotal</pre>
+<p>
+          <a href="/docs/" class="btn btn-success btn-lg wow bounceInLeft animated" href="#benefits" data-wow-delay="1.2s" style="visibility: visible;-webkit-animation-delay: 1.2s; -moz-animation-delay: 1.2s; animation-delay: 1.2s;">Find out more</a>
+          <a href="//github.com/dinever/Crotal" class="btn btn-info btn-lg wow bounceInLeft animated" href="#signup" data-wow-delay=".9s" style="visibility: visible;-webkit-animation-delay: .9s; -moz-animation-delay: .9s; animation-delay: .9s;">View the source</a>
           </div>
-          <!-- End Full row section -->
-        </div>
+        </p>
 
-        <!-- Begin Large Feature Blocks -->
-
-
-<!-- Footer -->
-<footer>
-    <div class="row footer">
-        <div class="large-6 columns left">
-            <p>Copyright @ 2013 - Peixuan Ding</p>
-        </div>
-        <div class="large-6 columns text-right right">
-            <p>Hosted by<a href="http://github.com/" target="_blank" class="github"><img src="/images/github.png" ></img></a></p>
-        </div>
+      </div>
     </div>
-</footer>
+  </div>
+</div>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<div class="block block-inverse block-secondary aa">
+  <div class="container">
+    <div class="row ap">
+      <div class="col-sm-5 col-sm-push-7">
+<pre class="ab">
+---
+layout: post
+title: "Hello World!"
+date: 2012-01-1 00:00
+slug: hello-world
+categories: welcome
+tags: Hello, World
+description: Welcome to Crotal, This is the first post, modify or remove it, and start your own site!
+---
 
-<!-- Ajax Form -->
-<script type="text/javascript">
-$(document).ready(function() {
-        // bind form using ajaxForm
-        $('#email-form').ajaxForm({
-resetForm: true,
+Welcome to Crotal, This is the first post, modify or remove it, and start your own site!</pre>
+      </div>
 
-// target identifies the element(s) to update with the server response
-target: '#success-message',
+      <div class="col-sm-6 col-sm-pull-5">
+        <h6 class="text-muted text-uppercase">Easy writing</h6>
+        <h3 class="m-t-0">Write your article in Markdown</h3>
+        <p class="lead m-b-md text-muted">All you need to do is writing your article in your favorite editor.</p>
+        <a href="/docs/" class="btn btn-default btn-lg btn-borderless">
+          Find out more
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
 
-// success identifies the function to invoke when the server response
-// has been received; here we apply a fade-in effect to the new content
-success: function() {
-$('#success-message').fadeIn('slow');
-}
-});
-        });
-</script>
-<script type="text/javascript">
+<div class="block app-block-footer aj">
+    <div class="container">
+      <div class="row">
+        <div id="footer-copyright">© 2015 <a href="http://dinever.com/" target="_blank">Peixuan(Shawn) Ding</a>
+      </div>
+    </div>
+  </div>
 
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-48757855-1']);
-_gaq.push(['_trackPageview']);
-
-(function() {
- var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
- ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
- var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
- })();
-
-</script>
-<script src="js/foundation.min.js"></script>
-
-<script src="http://designedbyben.com/appster/js/foundation/foundation.js"></script>
-
-<script src="js/foundation/foundation.dropdown.js"></script>
-
-<script src="js/foundation/foundation.topbar.js"></script>
-
-
-<script>$(document).foundation();</script>
+</div>
 
 
-</body>
-</html>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/toolkit.js"></script>
+    <script src="assets/js/application.js"></script>
+
+
+
+</body></html>
