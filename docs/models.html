@@ -15,7 +15,7 @@
   <link rel="stylesheet" type="text/css" href="_static/css/bootstrap-theme.min.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-    <title>Crotal &mdash; Crotal 0.9.8 documentation</title>
+    <title>Models &mdash; Crotal 0.9.8 documentation</title>
     
     <link rel="stylesheet" href="_static/guzzle.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -32,8 +32,9 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="top" title="Crotal 0.9.8 documentation" href="#" />
-    <link rel="next" title="Tutorial" href="tutorial.html" />
+    <link rel="top" title="Crotal 0.9.8 documentation" href="index.html" />
+    <link rel="next" title="Base Model" href="base_model.html" />
+    <link rel="prev" title="Site" href="site.html" />
   
    
 
@@ -49,9 +50,12 @@
           <a href="py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="right" >
-          <a href="tutorial.html" title="Tutorial"
+          <a href="base_model.html" title="Base Model"
              accesskey="N">next</a> |</li>
-        <li class="nav-item nav-item-0"><a href="#">Crotal 0.9.8 documentation</a> &raquo;</li> 
+        <li class="right" >
+          <a href="site.html" title="Site"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Crotal 0.9.8 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="container-wrapper">
@@ -62,7 +66,7 @@
   <div id="left-column">
     <div class="sphinxsidebar">
         <a href="
-    #" class="text-logo">Crotal</a>
+    index.html" class="text-logo">Crotal</a>
         
 <div class="sidebar-block">
   <div class="sidebar-wrapper">
@@ -71,10 +75,16 @@
   <div class="sidebar-toc">
     
     
-      <ul>
+      <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
 <li class="toctree-l1"><a class="reference internal" href="site.html">Site</a></li>
-<li class="toctree-l1"><a class="reference internal" href="models.html">Models</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Models</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="base_model.html">Base Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="model_post.html"><code class="docutils literal"><span class="pre">models.Post</span></code> - Post</a></li>
+<li class="toctree-l2"><a class="reference internal" href="model_page.html"><code class="docutils literal"><span class="pre">models.Page</span></code> - Page</a></li>
+<li class="toctree-l2"><a class="reference internal" href="model_template.html"><code class="docutils literal"><span class="pre">models.Template</span></code> - Template</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="db.html">Database</a></li>
 </ul>
 
@@ -101,65 +111,23 @@
           
           <div role="navigation" aria-label="breadcrumbs navigation">
             <ol class="breadcrumb">
-              <li><a href="#">Docs</a></li>
+              <li><a href="index.html">Docs</a></li>
               
-              <li>Crotal</li>
+              <li>Models</li>
             </ol>
           </div>
           
           <div class="document clearer body">
             
-  <div class="section" id="crotal-a-static-site-framework">
-<h1>Crotal - A static site framework<a class="headerlink" href="#crotal-a-static-site-framework" title="Permalink to this headline">¶</a></h1>
-<img alt="_images/crotal.png" src="_images/crotal.png" />
-<p>Welcome to the documentation of Crotal, getting started with Crotal is
-easy. I will describe it in as much detail as possible. However, if you
-get stuck in any problem, please check this documentation first, if you
-still can't get the solution after checking this documentation, please
-<a class="reference external" href="https://github.com/dinever/crotal/issues">file an issue on GitHub</a>.</p>
-</div>
-<div class="section" id="what-is-crotal">
-<h1>What is Crotal?<a class="headerlink" href="#what-is-crotal" title="Permalink to this headline">¶</a></h1>
-<p>Crotal is a static site generator, it reads markdown files and output a
-full static site, Crotal is good at blog, magazine or publishing sites,
-static site is fast and safe, and you need not to do any kind of
-transformations in web hosting. If you are familiar with HTML, you can
-easily custom the default theme, if you are good at Python, you can
-check the source code and modify it.</p>
-</div>
-<div class="section" id="installation">
-<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
-<p>Before the installation, let's make sure that you have these installed.</p>
-<ul class="simple">
-<li>Python 2</li>
-<li>Pip</li>
-</ul>
-<p>You can install Crotal via pip easily:</p>
-<div class="highlight-python"><div class="highlight"><pre>$ pip install crotal
-</pre></div>
-</div>
-<div class="section" id="documentation">
-<h2>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h2>
+  <div class="section" id="models">
+<h1>Models<a class="headerlink" href="#models" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a><ul class="simple">
+<li class="toctree-l1"><a class="reference internal" href="base_model.html">Base Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="model_post.html"><code class="docutils literal"><span class="pre">models.Post</span></code> - Post</a></li>
+<li class="toctree-l1"><a class="reference internal" href="model_page.html"><code class="docutils literal"><span class="pre">models.Page</span></code> - Page</a></li>
+<li class="toctree-l1"><a class="reference internal" href="model_template.html"><code class="docutils literal"><span class="pre">models.Template</span></code> - Template</a></li>
 </ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="site.html">Site</a></li>
-<li class="toctree-l1"><a class="reference internal" href="models.html">Models</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="base_model.html">Base Model</a></li>
-<li class="toctree-l2"><a class="reference internal" href="model_post.html"><code class="docutils literal"><span class="pre">models.Post</span></code> - Post</a></li>
-<li class="toctree-l2"><a class="reference internal" href="model_page.html"><code class="docutils literal"><span class="pre">models.Page</span></code> - Page</a></li>
-<li class="toctree-l2"><a class="reference internal" href="model_template.html"><code class="docutils literal"><span class="pre">models.Template</span></code> - Template</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="db.html">Database</a></li>
-</ul>
-</div>
-</div>
-<div class="section" id="license">
-<h2>LICENSE<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference external" href="http://www.gnu.org/licenses/gpl-3.0.en.html">GPL License</a></p>
 </div>
 </div>
 
@@ -168,8 +136,12 @@ check the source code and modify it.</p>
             
   <div class="footer-relations">
     
+      <div class="pull-left">
+        <a class="btn btn-default" href="site.html" title="previous chapter (use the left arrow)">Site</a>
+      </div>
+    
       <div class="pull-right">
-        <a class="btn btn-default" href="tutorial.html" title="next chapter (use the right arrow)">Tutorial</a>
+        <a class="btn btn-default" href="base_model.html" title="next chapter (use the right arrow)">Base Model</a>
       </div>
     </div>
     <div class="clearer"></div>
@@ -187,9 +159,12 @@ check the source code and modify it.</p>
           <a href="py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="right" >
-          <a href="tutorial.html" title="Tutorial"
+          <a href="base_model.html" title="Base Model"
              >next</a> |</li>
-        <li class="nav-item nav-item-0"><a href="#">Crotal 0.9.8 documentation</a> &raquo;</li> 
+        <li class="right" >
+          <a href="site.html" title="Site"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Crotal 0.9.8 documentation</a> &raquo;</li> 
       </ul>
     </div>
 <script type="text/javascript">

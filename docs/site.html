@@ -1,0 +1,249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+  
+  <!-- Licensed under the Apache 2.0 License -->
+  <link rel="stylesheet" type="text/css" href="_static/fonts/open-sans/stylesheet.css" />
+  <!-- Licensed under the SIL Open Font License -->
+  <link rel="stylesheet" type="text/css" href="_static/fonts/source-serif-pro/source-serif-pro.css" />
+  <link rel="stylesheet" type="text/css" href="_static/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="_static/css/bootstrap-theme.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Site &mdash; Crotal 0.9.8 documentation</title>
+    
+    <link rel="stylesheet" href="_static/guzzle.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.9.8',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Crotal 0.9.8 documentation" href="index.html" />
+    <link rel="next" title="Models" href="models.html" />
+    <link rel="prev" title="Tutorial" href="tutorial.html" />
+  
+   
+
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="models.html" title="Models"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="tutorial.html" title="Tutorial"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Crotal 0.9.8 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="container-wrapper">
+
+      <div id="mobile-toggle">
+        <a href="#"><span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span></a>
+      </div>
+  <div id="left-column">
+    <div class="sphinxsidebar">
+        <a href="
+    index.html" class="text-logo">Crotal</a>
+        
+<div class="sidebar-block">
+  <div class="sidebar-wrapper">
+    <h2>Table Of Contents</h2>
+  </div>
+  <div class="sidebar-toc">
+    
+    
+      <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Site</a></li>
+<li class="toctree-l1"><a class="reference internal" href="models.html">Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="db.html">Database</a></li>
+</ul>
+
+    
+  </div>
+</div>
+        
+<div class="sidebar-block">
+  <div class="sidebar-wrapper">
+    <div id="main-search">
+      <form class="form-inline" action="search.html" method="GET" role="form">
+        <div class="input-group">
+          <input name="q" type="text" class="form-control" placeholder="Search...">
+        </div>
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+        <div id="right-column">
+          
+          <div role="navigation" aria-label="breadcrumbs navigation">
+            <ol class="breadcrumb">
+              <li><a href="index.html">Docs</a></li>
+              
+              <li>Site</li>
+            </ol>
+          </div>
+          
+          <div class="document clearer body">
+            
+  <div class="section" id="site">
+<h1>Site<a class="headerlink" href="#site" title="Permalink to this headline">¶</a></h1>
+<span class="target" id="module-crotal.site"></span><dl class="class">
+<dt id="crotal.site.Site">
+<em class="property">class </em><code class="descclassname">crotal.site.</code><code class="descname">Site</code><span class="sig-paren">(</span><em>path</em>, <em>full=False</em>, <em>output=u'preview'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/crotal/site.html#Site"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#crotal.site.Site" title="Permalink to this definition">¶</a></dt>
+<dd><p>Site is an abstraction of a Crotal site.</p>
+<p>Example usage:</p>
+<dl class="docutils field-list" frame="void" rules="none">
+<dt class="field-name">Parameters</dt><dd class="field-body"><ul class="first simple">
+<li><strong>path</strong> -- The root path of the site.</li>
+<li><strong>full</strong> -- Set as <code class="docutils literal"><span class="pre">true</span></code> to do a full build, <code class="docutils literal"><span class="pre">false</span></code> to do an
+incremental build.</li>
+<li><strong>output</strong> -- Indicating the path of the output folder.</li>
+</ul>
+</dd>
+<dt class="field-name">Returns</dt><dd class="field-body"><p class="first last">None</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="crotal.site.Site.generate">
+<code class="descname">generate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#crotal.site.Site.generate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate the site, first render the templates, then write the rendered
+files in the output path, then save the database json file <code class="docutils literal"><span class="pre">db.json</span></code>.</p>
+<dl class="docutils field-list" frame="void" rules="none">
+<dt class="field-name">Returns</dt><dd class="field-body">None</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="crotal.site.Site.parse_single_file">
+<code class="descname">parse_single_file</code><span class="sig-paren">(</span><em>file_path</em>, <em>event_type</em><span class="sig-paren">)</span><a class="headerlink" href="#crotal.site.Site.parse_single_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method is used when single file change was detected during the server
+running.</p>
+<p>When a single file is modified, created or deleted, the crotal server calls
+this function and pass the <code class="docutils literal"><span class="pre">file_path</span></code> and <code class="docutils literal"><span class="pre">event_type</span></code> into it. Then the
+model(e.g. Post or Page or Template) of the file will be found based on
+<code class="docutils literal"><span class="pre">file_path</span></code> and model will be called to react to the file change, and the
+output will be rewrite.</p>
+<dl class="docutils field-list" frame="void" rules="none">
+<dt class="field-name">Parameters</dt><dd class="field-body"><ul class="first simple">
+<li><strong>file_path</strong> -- The path of the modified file.</li>
+<li><strong>event_type</strong> -- Type of the event, can be <code class="docutils literal"><span class="pre">modified</span></code>, <code class="docutils literal"><span class="pre">created</span></code> or
+<code class="docutils literal"><span class="pre">deleted</span></code>.</li>
+</ul>
+</dd>
+<dt class="field-name">Returns</dt><dd class="field-body"><p class="first last">None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="crotal.site.Site.detect_file_type">
+<code class="descname">detect_file_type</code><span class="sig-paren">(</span><em>file_path</em><span class="sig-paren">)</span><a class="headerlink" href="#crotal.site.Site.detect_file_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decide which model the file belongs to.</p>
+<dl class="docutils field-list" frame="void" rules="none">
+<dt class="field-name">Parameters</dt><dd class="field-body"><strong>file_path</strong> -- Path of the file.</dd>
+<dt class="field-name">Returns</dt><dd class="field-body"><code class="docutils literal"><span class="pre">model</span></code> that the file belongs to.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="crotal.site.Site.render">
+<code class="descname">render</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#crotal.site.Site.render" title="Permalink to this definition">¶</a></dt>
+<dd><p>Render the content of the site based on templates.
+:return: None</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="crotal.site.Site.write">
+<code class="descname">write</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#crotal.site.Site.write" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write the site content based on <code class="docutils literal"><span class="pre">self.site_content</span></code>.</p>
+<dl class="docutils field-list" frame="void" rules="none">
+<dt class="field-name">Returns</dt><dd class="field-body">None</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="crotal.site.Site.save">
+<code class="descname">save</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#crotal.site.Site.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save the database content into <code class="docutils literal"><span class="pre">db.json</span></code>.
+:return: None</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+            
+  <div class="footer-relations">
+    
+      <div class="pull-left">
+        <a class="btn btn-default" href="tutorial.html" title="previous chapter (use the left arrow)">Tutorial</a>
+      </div>
+    
+      <div class="pull-right">
+        <a class="btn btn-default" href="models.html" title="next chapter (use the right arrow)">Models</a>
+      </div>
+    </div>
+    <div class="clearer"></div>
+  
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="models.html" title="Models"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="tutorial.html" title="Tutorial"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Crotal 0.9.8 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+<script type="text/javascript">
+  $("#mobile-toggle a").click(function () {
+    $("#left-column").toggle();
+  });
+</script>
+<script type="text/javascript" src="_static/js/bootstrap.js"></script>
+  <div class="footer">
+    &copy; Peixuan Ding. Created using <a href="http://sphinx.pocoo.org/">Sphinx</a>.
+  </div>
+  </body>
+</html>

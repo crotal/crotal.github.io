@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+  
+  <!-- Licensed under the Apache 2.0 License -->
+  <link rel="stylesheet" type="text/css" href="_static/fonts/open-sans/stylesheet.css" />
+  <!-- Licensed under the SIL Open Font License -->
+  <link rel="stylesheet" type="text/css" href="_static/fonts/source-serif-pro/source-serif-pro.css" />
+  <link rel="stylesheet" type="text/css" href="_static/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="_static/css/bootstrap-theme.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Tutorial &mdash; Crotal 0.9.8 documentation</title>
+    
+    <link rel="stylesheet" href="_static/guzzle.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.9.8',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Crotal 0.9.8 documentation" href="index.html" />
+    <link rel="next" title="Site" href="site.html" />
+    <link rel="prev" title="Crotal - A static site framework" href="index.html" />
+  
+   
+
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="site.html" title="Site"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Crotal - A static site framework"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Crotal 0.9.8 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="container-wrapper">
+
+      <div id="mobile-toggle">
+        <a href="#"><span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span></a>
+      </div>
+  <div id="left-column">
+    <div class="sphinxsidebar">
+        <a href="
+    index.html" class="text-logo">Crotal</a>
+        
+<div class="sidebar-block">
+  <div class="sidebar-wrapper">
+    <h2>Table Of Contents</h2>
+  </div>
+  <div class="sidebar-toc">
+    
+    
+      <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="">Tutorial</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="site.html">Site</a></li>
+<li class="toctree-l1"><a class="reference internal" href="models.html">Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="db.html">Database</a></li>
+</ul>
+
+    
+  </div>
+</div>
+        
+<div class="sidebar-block">
+  <div class="sidebar-wrapper">
+    <div id="main-search">
+      <form class="form-inline" action="search.html" method="GET" role="form">
+        <div class="input-group">
+          <input name="q" type="text" class="form-control" placeholder="Search...">
+        </div>
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+        <div id="right-column">
+          
+          <div role="navigation" aria-label="breadcrumbs navigation">
+            <ol class="breadcrumb">
+              <li><a href="index.html">Docs</a></li>
+              
+              <li>Tutorial</li>
+            </ol>
+          </div>
+          
+          <div class="document clearer body">
+            
+  <div class="section" id="tutorial">
+<h1>Tutorial<a class="headerlink" href="#tutorial" title="Permalink to this headline">¶</a></h1>
+<p>After installation of the Crotal, <code class="docutils literal"><span class="pre">crotal</span></code> command will be available
+in your terminal window.</p>
+<div class="section" id="creating-a-new-site">
+<h2>Creating a new site<a class="headerlink" href="#creating-a-new-site" title="Permalink to this headline">¶</a></h2>
+<p>Go to the folder in which you want to put your site, simply use the
+following command to create a new site named <code class="docutils literal"><span class="pre">new</span></code>.</p>
+<div class="code bash highlight-python"><div class="highlight"><pre>$ crotal init new
+</pre></div>
+</div>
+</div>
+<div class="section" id="basic-structure">
+<h2>Basic Structure<a class="headerlink" href="#basic-structure" title="Permalink to this headline">¶</a></h2>
+<p>A basic Crotal site is like this:</p>
+<div class="code text highlight-python"><div class="highlight"><pre>▾ source/
+    ▸ pages/
+    ▸ posts/
+▸ static/
+▾ themes/
+    ▸ default/
+  _config.yml
+  db.json
+</pre></div>
+</div>
+<p>Your posts and pages content, which is the core data of your site, will
+be stored at <code class="docutils literal"><span class="pre">source/posts</span></code> and <code class="docutils literal"><span class="pre">source/pages</span></code>. The static files you
+may want to add to your site is under <code class="docutils literal"><span class="pre">static/</span></code>. The config file
+<code class="docutils literal"><span class="pre">_config.yml</span></code> is used to config your site, it contains the information
+like the site name, the author, the site description, etc.</p>
+</div>
+<div class="section" id="adding-a-post">
+<h2>Adding a post<a class="headerlink" href="#adding-a-post" title="Permalink to this headline">¶</a></h2>
+<p>Post is the very basic data format for your site. You can add a post
+using the following command:</p>
+<div class="highlight-python"><div class="highlight"><pre>$ crotal new_post &#39;hello-world-this-is-a-new-post&#39;
+</pre></div>
+</div>
+<p>However, you can still create a post mannually. Just create a new
+<code class="docutils literal"><span class="pre">.md</span></code> file under <code class="docutils literal"><span class="pre">source/posts/</span></code>.</p>
+</div>
+<div class="section" id="adding-a-page">
+<h2>Adding a page<a class="headerlink" href="#adding-a-page" title="Permalink to this headline">¶</a></h2>
+<p>If you want to add a standalone webpage to your site, it is smart to add
+a page in your site.</p>
+<p>To create a crotal page, simple type the following command:</p>
+<div class="highlight-python"><div class="highlight"><pre>$ crotal new_page
+</pre></div>
+</div>
+<p>The instruction will guide you for creating the page. However, if you
+want to mannually create a page, it will be simple, just add a <code class="docutils literal"><span class="pre">.md</span></code>
+file with proper format to the folder <code class="docutils literal"><span class="pre">source/pages</span></code>.</p>
+</div>
+<div class="section" id="generating-the-site">
+<h2>Generating the site<a class="headerlink" href="#generating-the-site" title="Permalink to this headline">¶</a></h2>
+<div class="code bash highlight-python"><div class="highlight"><pre>$ crotal generate
+</pre></div>
+</div>
+<p>After generating the site, your site files will be located at the
+<code class="docutils literal"><span class="pre">preview</span></code> folder.</p>
+</div>
+<div class="section" id="previewing-the-site">
+<h2>Previewing the site<a class="headerlink" href="#previewing-the-site" title="Permalink to this headline">¶</a></h2>
+<div class="code bash highlight-python"><div class="highlight"><pre>$ crotal server
+</pre></div>
+</div>
+<p>Now you can browse the site at <a class="reference external" href="http://localhost:1124">http://localhost:1124</a>, if the port 1124
+is already in use, please indicate a new port like this:</p>
+<div class="code bash highlight-python"><div class="highlight"><pre>$ crotal server -p 8088
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+            
+  <div class="footer-relations">
+    
+      <div class="pull-left">
+        <a class="btn btn-default" href="index.html" title="previous chapter (use the left arrow)">Crotal - A static site framework</a>
+      </div>
+    
+      <div class="pull-right">
+        <a class="btn btn-default" href="site.html" title="next chapter (use the right arrow)">Site</a>
+      </div>
+    </div>
+    <div class="clearer"></div>
+  
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="site.html" title="Site"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Crotal - A static site framework"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Crotal 0.9.8 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+<script type="text/javascript">
+  $("#mobile-toggle a").click(function () {
+    $("#left-column").toggle();
+  });
+</script>
+<script type="text/javascript" src="_static/js/bootstrap.js"></script>
+  <div class="footer">
+    &copy; Peixuan Ding. Created using <a href="http://sphinx.pocoo.org/">Sphinx</a>.
+  </div>
+  </body>
+</html>

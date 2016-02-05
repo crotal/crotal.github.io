@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+  
+  <!-- Licensed under the Apache 2.0 License -->
+  <link rel="stylesheet" type="text/css" href="_static/fonts/open-sans/stylesheet.css" />
+  <!-- Licensed under the SIL Open Font License -->
+  <link rel="stylesheet" type="text/css" href="_static/fonts/source-serif-pro/source-serif-pro.css" />
+  <link rel="stylesheet" type="text/css" href="_static/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="_static/css/bootstrap-theme.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>models.Page - Page &mdash; Crotal 0.9.8 documentation</title>
+    
+    <link rel="stylesheet" href="_static/guzzle.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.9.8',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Crotal 0.9.8 documentation" href="index.html" />
+    <link rel="up" title="Models" href="models.html" />
+    <link rel="next" title="models.Template - Template" href="model_template.html" />
+    <link rel="prev" title="models.Post - Post" href="model_post.html" />
+  
+   
+
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="model_template.html" title="models.Template - Template"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="model_post.html" title="models.Post - Post"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Crotal 0.9.8 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="models.html" accesskey="U">Models</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="container-wrapper">
+
+      <div id="mobile-toggle">
+        <a href="#"><span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span></a>
+      </div>
+  <div id="left-column">
+    <div class="sphinxsidebar">
+        <a href="
+    index.html" class="text-logo">Crotal</a>
+        
+<div class="sidebar-block">
+  <div class="sidebar-wrapper">
+    <h2>Table Of Contents</h2>
+  </div>
+  <div class="sidebar-toc">
+    
+    
+      <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="site.html">Site</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="models.html">Models</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="base_model.html">Base Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="model_post.html"><code class="docutils literal"><span class="pre">models.Post</span></code> - Post</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href=""><code class="docutils literal"><span class="pre">models.Page</span></code> - Page</a></li>
+<li class="toctree-l2"><a class="reference internal" href="model_template.html"><code class="docutils literal"><span class="pre">models.Template</span></code> - Template</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="db.html">Database</a></li>
+</ul>
+
+    
+  </div>
+</div>
+        
+<div class="sidebar-block">
+  <div class="sidebar-wrapper">
+    <div id="main-search">
+      <form class="form-inline" action="search.html" method="GET" role="form">
+        <div class="input-group">
+          <input name="q" type="text" class="form-control" placeholder="Search...">
+        </div>
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+        <div id="right-column">
+          
+          <div role="navigation" aria-label="breadcrumbs navigation">
+            <ol class="breadcrumb">
+              <li><a href="index.html">Docs</a></li>
+              
+                <li><a href="models.html">Models</a></li>
+              
+              <li><code class="docutils literal"><span class="pre">models.Page</span></code> - Page</li>
+            </ol>
+          </div>
+          
+          <div class="document clearer body">
+            
+  <div class="section" id="models-page-page">
+<h1><code class="docutils literal"><span class="pre">models.Page</span></code> - Page<a class="headerlink" href="#models-page-page" title="Permalink to this headline">¶</a></h1>
+<span class="target" id="module-crotal.models"></span><dl class="class">
+<dt id="crotal.models.Page">
+<em class="property">class </em><code class="descclassname">crotal.models.</code><code class="descname">Page</code><span class="sig-paren">(</span><em>**attributes</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/crotal/models/page.html#Page"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#crotal.models.Page" title="Permalink to this definition">¶</a></dt>
+<dd><p>Model <a class="reference internal" href="model_post.html#crotal.models.Post" title="crotal.models.Post"><code class="xref py py-obj docutils literal"><span class="pre">Post</span></code></a> for posts in the blog.</p>
+<p>Attributes:</p>
+<p><code class="docutils literal"><span class="pre">PATH</span></code>: The relative path where this model is related to, please
+use the relative path to this script.</p>
+<p><code class="docutils literal"><span class="pre">FILE_EXTENSIONS</span></code>: Only the files with these file extensions shall
+be read by the model.</p>
+<p><code class="docutils literal"><span class="pre">title</span></code>: Title of the post.</p>
+<p><code class="docutils literal"><span class="pre">slug</span></code>: Slug of the post that may be used in its url.</p>
+<p><code class="docutils literal"><span class="pre">pub_date</span></code>: Publication date of the post.</p>
+<p><code class="docutils literal"><span class="pre">tags</span></code>: A list of Tags that the post is related to.</p>
+<p><code class="docutils literal"><span class="pre">categories</span></code>: A list of Categories that the post belongs to.</p>
+<p><code class="docutils literal"><span class="pre">raw_content</span></code>: The raw markdown content of the post.</p>
+<p><code class="docutils literal"><span class="pre">html_content</span></code>: The html format post content genearted from markdown
+file(raw_content).</p>
+<p><code class="docutils literal"><span class="pre">short_html_content</span></code>: A short version of the <code class="docutils literal"><span class="pre">html_content</span></code>, which
+may be represented on the index page.</p>
+<dl class="method">
+<dt id="crotal.models.Page.create">
+<code class="descname">create</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/crotal/models/page.html#Page.create"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#crotal.models.Page.create" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert the page content from markdown into html format.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+            
+  <div class="footer-relations">
+    
+      <div class="pull-left">
+        <a class="btn btn-default" href="model_post.html" title="previous chapter (use the left arrow)"><code class="docutils literal"><span class="pre">models.Post</span></code> - Post</a>
+      </div>
+    
+      <div class="pull-right">
+        <a class="btn btn-default" href="model_template.html" title="next chapter (use the right arrow)"><code class="docutils literal"><span class="pre">models.Template</span></code> - Template</a>
+      </div>
+    </div>
+    <div class="clearer"></div>
+  
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="model_template.html" title="models.Template - Template"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="model_post.html" title="models.Post - Post"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Crotal 0.9.8 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="models.html" >Models</a> &raquo;</li> 
+      </ul>
+    </div>
+<script type="text/javascript">
+  $("#mobile-toggle a").click(function () {
+    $("#left-column").toggle();
+  });
+</script>
+<script type="text/javascript" src="_static/js/bootstrap.js"></script>
+  <div class="footer">
+    &copy; Peixuan Ding. Created using <a href="http://sphinx.pocoo.org/">Sphinx</a>.
+  </div>
+  </body>
+</html>

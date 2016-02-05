@@ -1,0 +1,413 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+  
+  <!-- Licensed under the Apache 2.0 License -->
+  <link rel="stylesheet" type="text/css" href="_static/fonts/open-sans/stylesheet.css" />
+  <!-- Licensed under the SIL Open Font License -->
+  <link rel="stylesheet" type="text/css" href="_static/fonts/source-serif-pro/source-serif-pro.css" />
+  <link rel="stylesheet" type="text/css" href="_static/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="_static/css/bootstrap-theme.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Base Model &mdash; Crotal 0.9.8 documentation</title>
+    
+    <link rel="stylesheet" href="_static/guzzle.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.9.8',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Crotal 0.9.8 documentation" href="index.html" />
+    <link rel="up" title="Models" href="models.html" />
+    <link rel="next" title="models.Post - Post" href="model_post.html" />
+    <link rel="prev" title="Models" href="models.html" />
+  
+   
+
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="model_post.html" title="models.Post - Post"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="models.html" title="Models"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Crotal 0.9.8 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="models.html" accesskey="U">Models</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="container-wrapper">
+
+      <div id="mobile-toggle">
+        <a href="#"><span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span></a>
+      </div>
+  <div id="left-column">
+    <div class="sphinxsidebar">
+        <a href="
+    index.html" class="text-logo">Crotal</a>
+        
+<div class="sidebar-block">
+  <div class="sidebar-wrapper">
+    <h2>Table Of Contents</h2>
+  </div>
+  <div class="sidebar-toc">
+    
+    
+      <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="site.html">Site</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="models.html">Models</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="">Base Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="model_post.html"><code class="docutils literal"><span class="pre">models.Post</span></code> - Post</a></li>
+<li class="toctree-l2"><a class="reference internal" href="model_page.html"><code class="docutils literal"><span class="pre">models.Page</span></code> - Page</a></li>
+<li class="toctree-l2"><a class="reference internal" href="model_template.html"><code class="docutils literal"><span class="pre">models.Template</span></code> - Template</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="db.html">Database</a></li>
+</ul>
+
+    
+  </div>
+</div>
+        
+<div class="sidebar-block">
+  <div class="sidebar-wrapper">
+    <div id="main-search">
+      <form class="form-inline" action="search.html" method="GET" role="form">
+        <div class="input-group">
+          <input name="q" type="text" class="form-control" placeholder="Search...">
+        </div>
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+        <div id="right-column">
+          
+          <div role="navigation" aria-label="breadcrumbs navigation">
+            <ol class="breadcrumb">
+              <li><a href="index.html">Docs</a></li>
+              
+                <li><a href="models.html">Models</a></li>
+              
+              <li>Base Model</li>
+            </ol>
+          </div>
+          
+          <div class="document clearer body">
+            
+  <div class="section" id="base-model">
+<h1>Base Model<a class="headerlink" href="#base-model" title="Permalink to this headline">¶</a></h1>
+<span class="target" id="module-crotal.models.base"></span><dl class="class">
+<dt id="crotal.models.base.Model">
+<em class="property">class </em><code class="descclassname">crotal.models.base.</code><code class="descname">Model</code><span class="sig-paren">(</span><em>**attributes</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/crotal/models/base.html#Model"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#crotal.models.base.Model" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is the model of the data in crotal site. It is a simple ORM in which
+the database layer is replaced with static file reader. The pattern is
+designed to go with Django.</p>
+<p>Example usage:</p>
+<blockquote>
+<div></div></blockquote>
+<p>We have defined the max length of the title as 8, so the result is:</p>
+<blockquote>
+<div></div></blockquote>
+<dl class="method">
+<dt id="crotal.models.base.Model.create">
+<code class="descname">create</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/crotal/models/base.html#Model.create"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#crotal.models.base.Model.create" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function is called after the model has successfully load the
+documents from the folder indicated, it should be overridden if
+you want to do some extra operation on the data.</p>
+<p>For example, if you want to convert the post content into markdown
+format, then you should define it in the method <code class="docutils literal"><span class="pre">create</span></code> under
+<code class="docutils literal"><span class="pre">Post</span></code> class.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="crotal.models.base.Model.to_db">
+<code class="descname">to_db</code><span class="sig-paren">(</span><em>absolute_path</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/crotal/models/base.html#Model.to_db"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#crotal.models.base.Model.to_db" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert the data from object into crotal database format for data
+persistence and serialization.</p>
+<dl class="docutils field-list" frame="void" rules="none">
+<dt class="field-name">Parameters</dt><dd class="field-body"><strong>absolute_path</strong> -- Absolute file path of the source file.</dd>
+<dt class="field-name">Returns</dt><dd class="field-body">A dictionary to be stored in crotal database.</dd>
+</dl>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="crotal.models.base.Model.load">
+<em class="property">classmethod </em><code class="descname">load</code><span class="sig-paren">(</span><em>database</em>, <em>config</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/crotal/models/base.html#Model.load"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#crotal.models.base.Model.load" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method loads the static files indicated by <code class="docutils literal"><span class="pre">cls.PATH</span></code> of each
+model, then parse them into objects.</p>
+<dl class="docutils field-list" frame="void" rules="none">
+<dt class="field-name">Parameters</dt><dd class="field-body"><ul class="first simple">
+<li><strong>database</strong> -- A crotal database instance.</li>
+<li><strong>config</strong> -- A configuration instance.</li>
+</ul>
+</dd>
+<dt class="field-name">Returns</dt><dd class="field-body"><p class="first last">None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="crotal.models.base.Model.classify_files">
+<em class="property">classmethod </em><code class="descname">classify_files</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/crotal/models/base.html#Model.classify_files"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#crotal.models.base.Model.classify_files" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method classifies the static files into 3 types: <code class="docutils literal"><span class="pre">unmodified</span></code>,
+<code class="docutils literal"><span class="pre">modified</span></code> and <code class="docutils literal"><span class="pre">removed</span></code> by comparing the last modified time of
+the file read from file system with the last modified time stored in
+database.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="crotal.models.base.Model.single_file_on_change">
+<em class="property">classmethod </em><code class="descname">single_file_on_change</code><span class="sig-paren">(</span><em>file_path</em>, <em>event_type</em>, <em>config</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/crotal/models/base.html#Model.single_file_on_change"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#crotal.models.base.Model.single_file_on_change" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method is called by the crotal server. If there is a file
+change when the server is running, the server will call this
+method to let the model responding to the change of file.</p>
+<dl class="docutils field-list" frame="void" rules="none">
+<dt class="field-name">Parameters</dt><dd class="field-body"><ul class="first simple">
+<li><strong>file_path</strong> -- The path of the designated file.</li>
+<li><strong>event_type</strong> -- A string indicating the event type, can be
+<code class="docutils literal"><span class="pre">created</span></code>, <code class="docutils literal"><span class="pre">modified</span></code> or <code class="docutils literal"><span class="pre">deleted</span></code>.</li>
+<li><strong>config</strong> -- A configuration instance.</li>
+</ul>
+</dd>
+<dt class="field-name">Returns</dt><dd class="field-body"><p class="first last"></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="crotal.models.base.Model.load_main_items">
+<em class="property">classmethod </em><code class="descname">load_main_items</code><span class="sig-paren">(</span><em>config</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/crotal/models/base.html#Model.load_main_items"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#crotal.models.base.Model.load_main_items" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method handles 3 types of source file differently, loads the
+fields of each source file, build objects and add them into the
+object manager.</p>
+<p>If the file is <code class="docutils literal"><span class="pre">unmodified</span></code>, then load it from crotal database;
+If the field is <code class="docutils literal"><span class="pre">modified</span></code>, then load it from the file system;
+If the field is <code class="docutils literal"><span class="pre">removed</span></code>, then remove it from the crotal database;</p>
+<p>As <code class="docutils literal"><span class="pre">unmodified</span></code> file is stored in crotal database which can be
+accessed from memory, loading an <code class="docutils literal"><span class="pre">unmodified</span></code> file can be much faster
+than loading a <code class="docutils literal"><span class="pre">modified</span></code> file from the file system(hard drive).
+This is also known as incremental build, which makes Crotal fast.</p>
+<dl class="docutils field-list" frame="void" rules="none">
+<dt class="field-name">Parameters</dt><dd class="field-body"><strong>config</strong> -- A configuration instance.</dd>
+<dt class="field-name">Returns</dt><dd class="field-body"></dd>
+</dl>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="crotal.models.base.Model.load_extra_items">
+<em class="property">classmethod </em><code class="descname">load_extra_items</code><span class="sig-paren">(</span><em>config</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/crotal/models/base.html#Model.load_extra_items"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#crotal.models.base.Model.load_extra_items" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method is called after all static files are load. If you want to
+load some other fields from the files in addition to the main fields,
+please override this function.</p>
+<p>For more information please refer to the implementation of <code class="docutils literal"><span class="pre">models.Post</span></code></p>
+<dl class="docutils field-list" frame="void" rules="none">
+<dt class="field-name">Parameters</dt><dd class="field-body"><strong>config</strong> -- A configuration instance.</dd>
+<dt class="field-name">Returns</dt><dd class="field-body"></dd>
+</dl>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="crotal.models.base.Model.load_single_file">
+<em class="property">classmethod </em><code class="descname">load_single_file</code><span class="sig-paren">(</span><em>file_path</em>, <em>config</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/crotal/models/base.html#Model.load_single_file"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#crotal.models.base.Model.load_single_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method is used to load a single file from the <code class="docutils literal"><span class="pre">file_path</span></code>.</p>
+<dl class="docutils field-list" frame="void" rules="none">
+<dt class="field-name">Parameters</dt><dd class="field-body"><ul class="first simple">
+<li><strong>file_path</strong> -- The path of the designated file.</li>
+<li><strong>config</strong> -- A configuration instance.</li>
+</ul>
+</dd>
+<dt class="field-name">Returns</dt><dd class="field-body"><p class="first last">An object of the loaded file.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="crotal.models.base.Model.remove_single_file">
+<em class="property">classmethod </em><code class="descname">remove_single_file</code><span class="sig-paren">(</span><em>file_path</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/crotal/models/base.html#Model.remove_single_file"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#crotal.models.base.Model.remove_single_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method is used to remove a single file from the object manager
+and the database.</p>
+<dl class="docutils field-list" frame="void" rules="none">
+<dt class="field-name">Parameters</dt><dd class="field-body"><strong>file_path</strong> -- The path of the designated file.</dd>
+</dl>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="crotal.models.base.Model.from_db">
+<em class="property">classmethod </em><code class="descname">from_db</code><span class="sig-paren">(</span><em>path</em>, <em>config</em>, <em>row</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/crotal/models/base.html#Model.from_db"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#crotal.models.base.Model.from_db" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method is used to load a single object directly from the
+database.</p>
+<dl class="docutils field-list" frame="void" rules="none">
+<dt class="field-name">Parameters</dt><dd class="field-body"><ul class="first simple">
+<li><strong>path</strong> -- Path of the designated file, which is not used.</li>
+<li><strong>config</strong> -- A configuration instance.</li>
+<li><strong>row</strong> -- A dictionary which contains the serialized
+information of the object.</li>
+</ul>
+</dd>
+<dt class="field-name">Returns</dt><dd class="field-body"><p class="first last">An object of the designated file.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="crotal.models.base.Model.from_file">
+<em class="property">classmethod </em><code class="descname">from_file</code><span class="sig-paren">(</span><em>file_path</em>, <em>config</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/crotal/models/base.html#Model.from_file"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#crotal.models.base.Model.from_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method is used to load a single object from the file system.</p>
+<dl class="docutils field-list" frame="void" rules="none">
+<dt class="field-name">Parameters</dt><dd class="field-body"><ul class="first simple">
+<li><strong>file_path</strong> -- The path of the designated file.</li>
+<li><strong>config</strong> -- A configuration instance.</li>
+</ul>
+</dd>
+<dt class="field-name">Returns</dt><dd class="field-body"><p class="first last">An object of the loaded file.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="crotal.models.base.Model.from_text">
+<em class="property">classmethod </em><code class="descname">from_text</code><span class="sig-paren">(</span><em>file_path</em>, <em>text</em>, <em>config</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/crotal/models/base.html#Model.from_text"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#crotal.models.base.Model.from_text" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method is used to load a single object from a string.</p>
+<dl class="docutils field-list" frame="void" rules="none">
+<dt class="field-name">Parameters</dt><dd class="field-body"><ul class="first simple">
+<li><strong>file_path</strong> -- The path of the designated file.</li>
+<li><strong>text</strong> -- The string containing object information.</li>
+<li><strong>config</strong> -- A configuration instance.</li>
+</ul>
+</dd>
+<dt class="field-name">Returns</dt><dd class="field-body"><p class="first last">The object of the loaded file.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="crotal.models.base.Model.parse_content">
+<em class="property">classmethod </em><code class="descname">parse_content</code><span class="sig-paren">(</span><em>file_path</em>, <em>content</em>, <em>config</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/crotal/models/base.html#Model.parse_content"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#crotal.models.base.Model.parse_content" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parse the content from a string and return an model object.</p>
+<dl class="docutils field-list" frame="void" rules="none">
+<dt class="field-name">Parameters</dt><dd class="field-body"><ul class="first simple">
+<li><strong>file_path</strong> -- The path of the designated file.</li>
+<li><strong>content</strong> -- The string containing object information.</li>
+<li><strong>config</strong> -- A configuration instance.</li>
+</ul>
+</dd>
+<dt class="field-name">Returns</dt><dd class="field-body"><p class="first last"></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="crotal.models.base.Model.parse_attributes">
+<em class="property">classmethod </em><code class="descname">parse_attributes</code><span class="sig-paren">(</span><em>file_path</em>, <em>config</em>, <em>attributes</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/crotal/models/base.html#Model.parse_attributes"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#crotal.models.base.Model.parse_attributes" title="Permalink to this definition">¶</a></dt>
+<dd><p>For each attributes read from the static file, find the corresponding
+field and parse the attribute by the <code class="docutils literal"><span class="pre">parse</span></code> method under the field.</p>
+<dl class="docutils field-list" frame="void" rules="none">
+<dt class="field-name">Parameters</dt><dd class="field-body"><ul class="first simple">
+<li><strong>file_path</strong> -- The path of the designated file.</li>
+<li><strong>config</strong> -- A configuration instance.</li>
+<li><strong>attributes</strong> -- Attributes read from the designated file.</li>
+</ul>
+</dd>
+<dt class="field-name">Returns</dt><dd class="field-body"><p class="first last">None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="crotal.models.base.Model.get_file_list">
+<em class="property">static </em><code class="descname">get_file_list</code><span class="sig-paren">(</span><em>base_dir</em>, <em>path_list</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/crotal/models/base.html#Model.get_file_list"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#crotal.models.base.Model.get_file_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method returns the list of all the source files in the directory
+indicated. Notice that there be multiple paths passed as a list and
+files started with '.' will be ignored.</p>
+<dl class="docutils field-list" frame="void" rules="none">
+<dt class="field-name">Parameters</dt><dd class="field-body"><ul class="first simple">
+<li><strong>base_dir</strong> -- The base directory of the crotal site.</li>
+<li><strong>path_list</strong> -- A list of paths that files will be looked up.</li>
+</ul>
+</dd>
+<dt class="field-name">Returns</dt><dd class="field-body"><p class="first last">None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+            
+  <div class="footer-relations">
+    
+      <div class="pull-left">
+        <a class="btn btn-default" href="models.html" title="previous chapter (use the left arrow)">Models</a>
+      </div>
+    
+      <div class="pull-right">
+        <a class="btn btn-default" href="model_post.html" title="next chapter (use the right arrow)"><code class="docutils literal"><span class="pre">models.Post</span></code> - Post</a>
+      </div>
+    </div>
+    <div class="clearer"></div>
+  
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="model_post.html" title="models.Post - Post"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="models.html" title="Models"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Crotal 0.9.8 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="models.html" >Models</a> &raquo;</li> 
+      </ul>
+    </div>
+<script type="text/javascript">
+  $("#mobile-toggle a").click(function () {
+    $("#left-column").toggle();
+  });
+</script>
+<script type="text/javascript" src="_static/js/bootstrap.js"></script>
+  <div class="footer">
+    &copy; Peixuan Ding. Created using <a href="http://sphinx.pocoo.org/">Sphinx</a>.
+  </div>
+  </body>
+</html>
