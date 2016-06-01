@@ -21,8 +21,6 @@ I live in Jersey City now. It has great weather, a peaceful community, [a good p
 
 ## Contact
 
-<iframe src="https://ghbtns.com/github-btn.html?user=dinever&type=follow&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
-
 Email: <a target="_blank" href="mailto:dingpeixuan911@gmail.com">dingpeixuan911&lt;/at&gt;gmail.com</a>
 
 Twitter: <a target="_blank" href="http://twitter.com/Dingpeixuan">@Dingpeixuan</a>
