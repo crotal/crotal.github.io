@@ -9,7 +9,7 @@ tags:
 slug: install-cx-oracle-on-mavericks-correctly
 ---
 
-![Oracle](/images/oracle-banner.jpg)
+![Oracle](http://i.imgur.com/e1NCQVn.jpg)
 
 cx-Oracle is a Python Oracle DB connection package, ealier today I met some trouble installing on my macbook running Mavericks, after hacking I found the means to install it correctly:
 

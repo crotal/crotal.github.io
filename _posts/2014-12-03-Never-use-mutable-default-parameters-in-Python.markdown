@@ -7,7 +7,7 @@ tags: Python
 slug: mutable-default-parameters
 ---
 
-![Python](/images/python.png)
+![Python](http://i.imgur.com/PO4oXF1.png)
 
 While writing a Python function, you may need to declare some default parameters, people new to Python may write code like this:
 

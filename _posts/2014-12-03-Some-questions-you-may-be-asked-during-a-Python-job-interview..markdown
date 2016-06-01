@@ -13,7 +13,7 @@ It's fairly easy to learn the Python syntax, but Python as a full-featured langu
 
 In my experience, these questions are the most likely be asked during a job interview about python, I wrote down the answers, hope that may help you!
 
-![Python](/images/python.png)
+![Python](http://i.imgur.com/PO4oXF1.png)
 
 **Q: What is *lambda operator* in Python, how do you use it?**
 

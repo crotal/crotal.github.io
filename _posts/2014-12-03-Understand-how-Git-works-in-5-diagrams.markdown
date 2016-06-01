@@ -88,7 +88,7 @@ Thanks to [Vincent Xie](http://xiewenwei.net/), who has made a great project [he
 
 I will explain how git works using his demo project, firstly you can check the history diagram below.
 
-![Screencast from Ungit.](/images/dig_git-1.png)
+![Screencast from Ungit.](http://i.imgur.com/6WH3ysM.png)
 
 ### 1. Initialize our repository and add a.txt
 
@@ -103,7 +103,7 @@ git commit -m 'Add a.txt'
 
 After that there will be 3 Git objects, a commit, a tree and a blob, the relation is like this:
 
-![The 1st Commit](/images/9c44291362d64765803afba65fa2a0a4.png)
+![The 1st Commit](http://i.imgur.com/myhx70C.png)
 
 The object with a blue background is the commit we made, you can see that there is a reference in it, which refer to the tree object, which is in grey background, and the tree object contains a reference to a blob, which is white backgrounded.
 
@@ -119,7 +119,7 @@ git commit -m 'Add a.txt'
 
 After the commit, those objects is like this:
 
-![The 2nd Commit](/images/ba84d2ce8ba5066444a3e382ed644206.png)
+![The 2nd Commit](http://i.imgur.com/DcRsjqZ.png)
 
 Notice the commit `aef54`, which is the new commit we made, there are 2 references in it, one is to the parent commit we made in the previous step, the other one is to the tree which handles the changes we made in this commit. Cause `a.txt` is changed in this commit, Git creates a new Blob object identified by `42546` which holds the content of it.
 
@@ -139,7 +139,7 @@ git commit -m "Add b.txt and lib/c.txt"
 
 And the diagram is like this:
 
-![The 3rd Commit](/images/1ab7f0d2ab24734f0af6fc2d8e7c7a7d-1.png)
+![The 3rd Commit](http://i.imgur.com/4nsEFq6.png)
 
 Notice that the new tree object `54824` have 3 references, one is to the blob `42546`, which hold the content in `a.txt`, since we didn't make any changes to `a.txt`, there is no necessary for Git to create a new Blob for it. Another one is to the blob `544e0`, which contains the content we write in `b.txt`, notice that the last reference is to another tree identified with `21c9f`, which stands for the folder `lib/`, and in the sub-tree `21c9f` there is a reference to the new created blob `3e45c` which contains the change we made to `lib/c.txt`.
 
@@ -157,7 +157,7 @@ git commit -m "Add d.txt"
 
 Then the objects diagram is like this:
 
-![The 4th Commit](/images/1ab7f0d2ab24734f0af6fc2d8e7c7a7d-1-1.png)
+![The 4th Commit](http://i.imgur.com/4nsEFq6.png)
 
 We created a new commit object `0c5c1` which have the parent referenced to the first commit `e9178`.
 
@@ -172,7 +172,7 @@ git merge test1
 
 The diagram looks a bit complex.
 
-![The 5th Commit](/images/8e555b42a9775d725bd95ee7f369af7c-1.png)
+![The 5th Commit](http://i.imgur.com/77TuENh.png)
 
 You only have to notice the commit `def18`, notice that it have two parents, one referenced to the previous  branch master, the other one is to the previous branch test1.
 

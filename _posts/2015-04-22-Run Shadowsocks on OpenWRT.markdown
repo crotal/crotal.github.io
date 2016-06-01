@@ -10,7 +10,7 @@ tags:
 slug: Run-Shadowsocks-on-OpenWRT
 ---
 
-![Shadowsocks](/images/Shadowsocks_logo.png)
+![Shadowsocks](http://i.imgur.com/Z8LRdDs.png)
 
 Nowadays, Shawdowsocks has become a lot more popular in China. We use it to break though the Chinese network block so that we can visit Google without blocking. If you're living in China and have the demand of visiting websites like Google, Twitter, YouTube and BBC, Shadowsocks is a great choice to build your proxy server. However, if you're not living in China but still have the difficulty playing online games as the ping is too high and connection is unstable, you can still try Shadowsocks as it may bring you a more stable network environment as long as the performance of your remote server is not too bad.
 

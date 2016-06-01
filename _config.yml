@@ -1,9 +1,10 @@
 # Site settings
 title: Shawn Ding
+subtitle: Life is all about experience.
 SEOTitle: Shawn Ding's Blog
 # header-img: img/home-bg.jpg
 email: dingpeixuan911@gmail.com
-description: "Life is all about experience."
+description: "Shawn Ding, a software developer from the New York City."
 keyword: "Shawn Ding, 丁培轩, Dinever, @dinever, Dinever's Blog, blog, personal website, developer"
 url: "http://dinever.com"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
